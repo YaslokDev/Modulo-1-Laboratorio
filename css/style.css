@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #212429;
+  --secondary: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary);
+  max-width: 1280px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  font-size: 16px;
+  padding: 16px;
+  background-color: var(--secondary);
+  border-bottom: 1px solid black;
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.enlaces ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.enlaces a {
+  margin: 15px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.enlaces a:hover {
+  font-weight: bold;
+}
+
+.iconos-usuario img {
+  padding: 16px;
+}
+
+main {
+  margin: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.escaparate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.ficha {
+  margin: 8px;
+  padding: 16px;
+}
+
+.ficha img {
+  border-radius: 10px;
+}
+
+.texto-ficha {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  font-size: 16px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  align-items: center;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer div {
+  background-color: var(--secondary);
+  padding: 8px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.footer span a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+@media (max-width: 920px) {
+  .menu-hamburguesa {
+    margin: 0 auto;
+  }
+  .enlaces,
+  .iconos-usuario {
+    display: none;
+  }
+
+  h1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .escaparate {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    font-weight: bold;
+    margin: 10px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--secondary);
+  }
+}
